@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Link - Profile</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="profile-page">
+
+    <div class="profile-header">
+
+        <div class="profile-avatar">
+
+            <img
+                id="profileImage"
+                src="https://via.placeholder.com/120"
+                alt="Profile Picture">
+
+        </div>
+
+        <input
+            type="file"
+            id="profileUpload"
+            accept="image/*"
+            hidden>
+
+        <button
+            class="change-photo-btn"
+            onclick="document.getElementById('profileUpload').click()">
+
+            📷 Change Profile Picture
+
+        </button 
+        class="edit-profile-btn"
+        onclick="window.location.href='edit-profile.html'">
+    
+
+            ✏ Edit Profile
+
+        </button>
+
+        <h1 id="profileName">
+
+            Student Name
+
+        </h1>
+
+        <p id="profileDepartment">
+
+            Computer Science
+
+        </p>
+
+    </div>
+
+    <div class="profile-stats">
+
+        <div>
+
+            <h2>25</h2>
+
+            <span>Uploads</span>
+
+        </div>
+
+        <div>
+
+            <h2>1240</h2>
+
+            <span>Students Helped</span>
+
+        </div>
+
+        <div>
+
+            <h2>Gold</h2>
+
+            <span>Level</span>
+
+        </div>
+
+    </div>
+
+    <div class="profile-menu">
+
+        <a href="statistics.html">
+
+            📊 My Statistics
+
+        </a>
+
+        <a href="certificate.html">
+
+            🏆 My Certificates
+
+        </a>
+
+        <a href="saved.html">
+
+            ❤️ Saved Resources
+
+        </a>
+
+        <a href="myuploads.html">
+
+            📂 My Uploads
+
+        </a>
+
+        <a href="settings.html">
+
+            ⚙️ Settings
+
+        </a>
+
+        <a href="about.html">
+
+            ℹ️ About Campus Link
+
+        </a>
+
+    </div>
+
+    <button
+        class="logout-button"
+        onclick="logout()">
+
+        Logout
+
+    </button>
+
+</div>
+
+<nav class="bottom-nav">
+
+    <a href="dashboard.html">Home</a>
+
+    <a href="search.html">Search</a>
+
+    <a href="upload.html">Upload</a>
+
+    <a href="recognition.html">Awards</a>
+
+    <a href="profile.html" class="active">Profile</a>
+
+</nav>
+
+<script src="../js/auth.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusLink - Sign Up</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/collegeData.js"></script>
+
+    <script src="../js/auth.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="signup-container">
+
+    <h1>Create Your Account</h1>
+
+    <p>Join Campus Link and start learning, sharing & growing.</p>
+
+    <form id="signupForm">
+
+        <!-- Full Name -->
+
+        <input
+            type="text"
+            id="fullName"
+            placeholder="Full Name"
+            required
+        >
+
+        <!-- Register Number / Staff ID -->
+
+        <input
+            type="text"
+            id="registerNumber"
+            placeholder="Register Number"
+            required
+        >
+
+        <!-- Email -->
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Personal Email Address"
+            required
+        >
+
+        <!-- Role -->
+
+        <select id="role" required>
+
+            <option value="">Select Role</option>
+
+            <option value="Student">Student</option>
+
+            <option value="Faculty">Faculty</option>
+
+        </select>
+
+        <!-- ========================= -->
+        <!-- STUDENT SECTION START -->
+        <!-- ========================= -->
+
+        <div id="studentFields">
+                    <!-- Programme Level -->
+
+        <select id="programmeLevel" required>
+
+            <option value="">Programme Level</option>
+
+            <option value="UG">Undergraduate (UG)</option>
+
+            <option value="PG">Postgraduate (PG)</option>
+
+        </select>
+
+        <!-- Programme -->
+
+        <select id="programme" required>
+
+            <option value="">Select Programme</option>
+
+        </select>
+
+        <!-- Academic Year -->
+
+        <select id="year" required>
+
+            <option value="">Academic Year</option>
+
+        </select>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- FACULTY SECTION -->
+        <!-- ========================= -->
+
+        <div id="facultyFields" style="display:none;">
+
+            <select id="facultyDepartment">
+
+                <option value="">Select Department</option>
+
+                <option>English</option>
+
+                <option>Commerce</option>
+
+                <option>Computer Science</option>
+
+                <option>Food Science & Nutrition</option>
+
+                <option>Psychology</option>
+
+            </select>
+
+            <select id="designation">
+
+                <option value="">Select Designation</option>
+
+                <option>Assistant Professor</option>
+
+                <option>Associate Professor</option>
+
+                <option>Professor</option>
+
+                <option>Head of Department</option>
+
+                <option>Principal</option>
+
+            </select>
+
+        </div>
+
+        <!-- Password -->
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+        >
+
+        <!-- Confirm Password -->
+
+        <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+            required
+        >
+                <!-- Create Account Button -->
+
+        <button type="submit">
+
+            Create Account
+
+        </button>
+
+    </form>
+
+    <p>
+
+        Already have an account?
+
+        <a href="login.html">
+
+            Login
+
+        </a>
+
+    </p>
+
+</div>
+
+</body>
+
+</html>

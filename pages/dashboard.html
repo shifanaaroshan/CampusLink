@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CampusLink Dashboard</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <div class="dashboard-header">
+
+        <h1 id="userName">Hello, Student </h1>
+
+        <p>What would you like to learn today?</p>
+
+    </div>
+
+    <div class="dashboard-search">
+
+        <input
+        type="text"
+        placeholder="Search notes, PPTs, audio..."
+        readonly
+        onclick="window.location.href='search.html'">
+
+    </div>
+
+    <h2> Continue Learning</h2>
+
+    <div class="continue-grid">
+
+        <div class="continue-card">
+
+             Java Notes
+
+        </div>
+
+        <div class="continue-card">
+
+             DBMS PPT
+
+        </div>
+
+        <div class="continue-card">
+
+             OS Audio
+
+        </div>
+
+    </div>
+
+    <h2> Explore</h2>
+
+    <div class="explore-grid">
+
+        <a href="search.html">📄 Notes</a>
+
+        <a href="search.html">📽 PPTs</a>
+
+        <a href="search.html">🎧 Audio</a>
+
+        <a href="search.html">💼 Experiences</a>
+
+    </div>
+
+    <h2> Your Contribution</h2>
+
+    <div class="dashboard-stats">
+
+        <div>
+
+            <h3>25</h3>
+
+            <span>Uploads</span>
+
+        </div>
+
+        <div>
+
+            <h3>1240</h3>
+
+            <span>Students Helped</span>
+
+        </div>
+
+        <div>
+
+            <h3>Gold</h3>
+
+            <span>Level</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html" class="active">Home</a>
+
+<a href="search.html">Search</a>
+
+<a href="upload.html">Upload</a>
+
+<a href="recognition.html">Awards</a>
+
+<a href="profile.html">Profile</a>
+
+</nav>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

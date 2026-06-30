@@ -1,0 +1,210 @@
+/* ==========================================
+   PROFILE PAGE
+========================================== */
+
+.profile-container{
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:#F7F5FF;
+
+    padding:30px 50px 120px;
+
+    box-sizing:border-box;
+
+}
+
+.profile-header{
+
+    background:linear-gradient(135deg,#6C63FF,#8B5CF6);
+
+    color:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 25px rgba(108,99,255,.25);
+
+}
+
+.profile-avatar{
+
+    width:90px;
+
+    height:90px;
+
+    background:white;
+
+    color:#6C63FF;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    margin:0 auto 20px;
+
+}
+
+.profile-header h1{
+
+    margin-bottom:8px;
+
+    font-size:30px;
+
+}
+
+.profile-header p{
+
+    opacity:.9;
+
+    font-size:16px;
+
+}
+
+.profile-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.profile-card h2{
+
+    color:#5B21B6;
+
+    margin-bottom:20px;
+
+}
+/* ==========================================
+   PROFILE DETAILS
+========================================== */
+
+.info-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #ECECEC;
+
+}
+
+.info-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.info-row span{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.info-row strong{
+
+    color:#5B21B6;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   PROFILE OPTIONS
+========================================== */
+
+.profile-option{
+
+    display:flex;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#444;
+
+    background:#F8F7FF;
+
+    padding:15px 18px;
+
+    border-radius:12px;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.profile-option:hover{
+
+    background:#ECE9FF;
+
+    color:#6C63FF;
+
+    transform:translateX(6px);
+
+}
+
+/* ==========================================
+   LOGOUT BUTTON
+========================================== */
+
+.logout-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#6C63FF;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:15px;
+
+}
+
+.logout-btn:hover{
+
+    background:#5B21B6;
+
+}
