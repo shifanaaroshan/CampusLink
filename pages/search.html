@@ -98,12 +98,19 @@
             <h3>Operating System Audio</h3>
 
             <p>Faculty Upload</p>
+<div class="search-resource" data-category="question-paper">
 
-        </div>
+    <div>
 
-        <a href="results.html">View</a>
+        <h3>Computer Networks Question Paper</h3>
+
+        <p>Previous Year Examination</p>
 
     </div>
+
+    <a href="results.html">View</a>
+
+</div>
 
 </div>
 
@@ -120,7 +127,51 @@
 <a href="profile.html">Profile</a>
 
 </nav>
+<script>
 
+const buttons =
+document.querySelectorAll(
+".search-categories button"
+);
+
+const resources =
+document.querySelectorAll(
+".search-resource"
+);
+
+buttons.forEach(button=>{
+
+button.addEventListener(
+"click",
+function(){
+
+const category =
+this.textContent
+.toLowerCase();
+
+resources.forEach(resource=>{
+
+if(
+category==="all" ||
+resource.dataset.category===category
+){
+
+resource.style.display="flex";
+
+}
+else{
+
+resource.style.display="none";
+
+}
+
+});
+
+});
+
+});
+
+</script>
 </body>
 
 </html>
