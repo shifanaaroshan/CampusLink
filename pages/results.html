@@ -3,85 +3,63 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-<title>CampusLink - Search Results</title>
+    <title>CampusLink - Search Results</title>
 
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet"
+        href="../css/style.css">
 
 </head>
 
 <body>
 
-<div class="results-page">
+    <div class="results-page">
 
-    <h1>Search Results</h1>
+        <h1>Search Results</h1>
 
-    <p>Showing resources matching your search.</p>
+        <p>Showing resources matching your search.</p>
 
-    <input
-        type="text"
-        placeholder="Search again..."
-        class="results-search"
-    >
+        <input
+            type="text"
+            placeholder="Search again..."
+            class="results-search">
 
-    <div class="result-card">
+        <div id="resultsContainer">
 
-        <h3> Java Programming Notes</h3>
-
-        <p>Notes • Uploaded by Faculty</p>
-
-        <a href="resource.html">View Resource</a>
+        </div>
 
     </div>
 
-    <div class="result-card">
+    <nav class="bottom-nav">
 
-        <h3> Java PPT</h3>
+        <a href="dashboard.html">
+            Home
+        </a>
 
-        <p>PPT • Uploaded by Student</p>
+        <a href="search.html"
+            class="active">
+            Search
+        </a>
 
-        <a href="resource.html">View Resource</a>
+        <a href="upload.html">
+            Upload
+        </a>
 
-    </div>
+        <a href="recognition.html">
+            Awards
+        </a>
 
-    <div class="result-card">
+        <a href="profile.html">
+            Profile
+        </a>
 
-        <h3> Java Interview Experience</h3>
+    </nav>
 
-        <p>Experience • Uploaded by Alumni Student</p>
-
-        <a href="resource.html">View Resource</a>
-
-    </div>
-
-    <div class="result-card">
-
-        <h3> Java Audio Notes</h3>
-
-        <p>Audio • Uploaded by Faculty</p>
-
-        <a href="resource.html">View Resource</a>
-
-    </div>
-
-</div>
-
-<nav class="bottom-nav">
-
-<a href="dashboard.html">Home</a>
-
-<a href="search.html" class="active">Search</a>
-
-<a href="upload.html">Upload</a>
-
-<a href="recognition.html">Awards</a>
-
-<a href="profile.html">Profile</a>
-
-</nav>
+    <script src="../js/results.js"></script>
 
 </body>
 
