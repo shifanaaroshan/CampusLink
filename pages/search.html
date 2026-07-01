@@ -3,176 +3,157 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-<title>CampusLink - Search</title>
+    <title>CampusLink - Search</title>
 
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet"
+        href="../css/style.css">
 
 </head>
 
 <body>
 
-<div class="search-container">
+    <div class="search-container">
 
-    <div class="search-header">
+        <div class="search-header">
 
-        <h1> Discover Resources</h1>
+            <h1>🔍 Discover Resources</h1>
 
-        <p>Find notes, PPTs, audio, experiences and more.</p>
-
-    </div>
-
-    <input
-        type="text"
-        class="main-search"
-        placeholder="Search anything..."
-    >
-
-    <div class="search-categories">
-
-        <button class="active-category">All</button>
-
-        <button>Notes</button>
-
-        <button>PPT</button>
-
-        <button>Audio</button>
-
-        <button>Experience</button>
-
-        <button>Question Papers</button>
-
-    </div>
-
-    <h2> Trending Resources</h2>
-
-    <div class="search-resource" data-category="notes">
-
-        <div>
-
-            <h3>Java Programming Notes</h3>
-
-            <p>Computer Science</p>
+            <p>Find notes, PPTs, audio, experiences and more.</p>
 
         </div>
 
-        <a href="results.html">View</a>
+        <input
+            type="text"
+            class="main-search"
+            placeholder="Search anything...">
 
-    </div>
+        <div class="search-categories">
 
-    <div class="search-resource" data-category="ppt">
+            <button class="active-category">All</button>
 
-        <div>
+            <button>Notes</button>
 
-            <h3>DBMS Complete PPT</h3>
+            <button>PPT</button>
 
-            <p>Computer Science</p>
+            <button>Audio</button>
 
-        </div>
+            <button>Experience</button>
 
-        <a href="results.html">View</a>
-
-    </div>
-
-    <div class="search-resource" data-category="experience">
-
-        <div>
-
-            <h3>Placement Experience</h3>
-
-            <p>Campus Interview</p>
+            <button>Question Papers</button>
 
         </div>
 
-        <a href="results.html">View</a>
+        <h2>Trending Resources</h2>
+
+        <div class="search-resource"
+            data-category="notes">
+
+            <div>
+
+                <h3>Java Programming Notes</h3>
+
+                <p>Computer Science</p>
+
+            </div>
+
+            <a href="results.html">View</a>
+
+        </div>
+
+        <div class="search-resource"
+            data-category="ppt">
+
+            <div>
+
+                <h3>DBMS Complete PPT</h3>
+
+                <p>Computer Science</p>
+
+            </div>
+
+            <a href="results.html">View</a>
+
+        </div>
+
+        <div class="search-resource"
+            data-category="experience">
+
+            <div>
+
+                <h3>Placement Experience</h3>
+
+                <p>Campus Interview</p>
+
+            </div>
+
+            <a href="results.html">View</a>
+
+        </div>
+
+        <div class="search-resource"
+            data-category="audio">
+
+            <div>
+
+                <h3>Operating System Audio</h3>
+
+                <p>Faculty Upload</p>
+
+            </div>
+
+            <a href="results.html">View</a>
+
+        </div>
+
+        <div class="search-resource"
+            data-category="question-paper">
+
+            <div>
+
+                <h3>Computer Networks Question Paper</h3>
+
+                <p>Previous Year Examination</p>
+
+            </div>
+
+            <a href="results.html">View</a>
+
+        </div>
 
     </div>
 
-    <div class="search-resource" data-category="audio">
+    <nav class="bottom-nav">
 
-        <div>
+        <a href="dashboard.html">
+            Home
+        </a>
 
-            <h3>Operating System Audio</h3>
+        <a href="search.html"
+            class="active">
+            Search
+        </a>
 
-            <p>Faculty Upload</p>
-<div class="search-resource" data-category="question-paper">
+        <a href="upload.html">
+            Upload
+        </a>
 
-    <div>
+        <a href="recognition.html">
+            Awards
+        </a>
 
-        <h3>Computer Networks Question Paper</h3>
+        <a href="profile.html">
+            Profile
+        </a>
 
-        <p>Previous Year Examination</p>
+    </nav>
 
-    </div>
+    <script src="../js/search.js"></script>
 
-    <a href="results.html">View</a>
-
-</div>
-
-</div>
-
-<nav class="bottom-nav">
-
-<a href="dashboard.html">Home</a>
-
-<a href="search.html" class="active">Search</a>
-
-<a href="upload.html">Upload</a>
-
-<a href="recognition.html">Awards</a>
-
-<a href="profile.html">Profile</a>
-
-</nav>
-<script>
-
-const buttons =
-document.querySelectorAll(
-".search-categories button"
-);
-
-const resources =
-document.querySelectorAll(
-".search-resource"
-);
-
-buttons.forEach(button=>{
-
-button.addEventListener(
-"click",
-function(){
-
-const category =
-this.textContent
-.toLowerCase();
-
-resources.forEach(resource=>{
-
-if(
-category==="all" ||
-resource.dataset.category===category
-){
-
-resource.style.display="flex";
-
-}
-else{
-
-resource.style.display="none";
-
-}
-
-});
-
-});
-
-});
-
-
-      <script src="../js/search.js"></script>
 </body>
 
 </html>
