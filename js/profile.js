@@ -1,104 +1,62 @@
-// ======================================
-// CAMPUS LINK - PROFILE
-// ======================================
+const profileUpload =
+document.getElementById(
+"profileUpload"
+);
 
-// Get Logged In User
-const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+const profileImage =
+document.getElementById(
+"profileImage"
+);
 
-// Check Login
-if (!loggedInUser) {
+if(profileUpload){
 
-    alert("Please login first.");
+profileUpload.addEventListener(
+"change",
+function(){
 
-    window.location.href = "login.html";
+const file =
+this.files[0];
 
-}
+if(file){
 
-// Profile Name
-const profileName = document.getElementById("profileName");
+const reader =
+new FileReader();
 
-if(profileName){
+reader.onload =
+function(e){
 
-    profileName.textContent = loggedInUser.fullName || "-";
+profileImage.src =
+e.target.result;
 
-}
+localStorage.setItem(
+"profileImage",
+e.target.result
+);
 
-// Role
-const profileRole = document.getElementById("profileRole");
+};
 
-if(profileRole){
-
-    profileRole.textContent = loggedInUser.role || "-";
-
-}
-
-// Register Number
-const registerNumber = document.getElementById("registerNumber");
-
-if(registerNumber){
-
-    registerNumber.textContent = loggedInUser.registerNumber || "-";
+reader.readAsDataURL(file);
 
 }
 
-// Email
-const email = document.getElementById("email");
-
-if(email){
-
-    email.textContent = loggedInUser.email || "-";
+});
 
 }
 
-// Programme / Department
-const programme = document.getElementById("programme");
+window.addEventListener(
+"load",
+function(){
 
-if(programme){
+const savedImage =
+localStorage.getItem(
+"profileImage"
+);
 
-    if(loggedInUser.role === "Faculty"){
+if(savedImage){
 
-        programme.textContent =
-        loggedInUser.department || "-";
-
-    }else{
-
-        programme.textContent =
-        loggedInUser.programme || "-";
-
-    }
+profileImage.src =
+savedImage;
 
 }
 
-// Academic Year / Designation
-const year = document.getElementById("year");
-
-if(year){
-
-    if(loggedInUser.role === "Faculty"){
-
-        year.textContent =
-        loggedInUser.designation || "-";
-
-    }else{
-
-        year.textContent =
-        loggedInUser.year || "-";
-
-    }
-
-}
-
-// Logout
-const logoutBtn = document.getElementById("logoutBtn");
-
-if(logoutBtn){
-
-    logoutBtn.addEventListener("click", function(){
-
-        localStorage.removeItem("loggedInUser");
-
-        window.location.href = "login.html";
-
-    });
-
-}
+});
