@@ -3538,3 +3538,106 @@ color:#A78BFA;
     color:white;
 
 }
+/* ==========================================
+   RESULTS PAGE
+========================================== */
+
+.results-page{
+
+    width:90%;
+    max-width:900px;
+
+    margin:auto;
+
+    padding:30px;
+
+    padding-bottom:120px;
+
+}
+
+.results-search{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    margin:20px 0 30px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.result-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.result-card h3{
+
+    color:#5B21B6;
+
+    margin-bottom:10px;
+
+}
+
+.result-card p{
+
+    color:#666;
+
+    margin-bottom:15px;
+
+}
+
+.result-card a{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    background:#7C3AED;
+
+    color:white;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+}
+
+.result-card a:hover{
+
+    background:#5B21B6;
+
+}
+body.dark-mode .result-card{
+
+    background:#1E1E1E;
+
+}
+
+body.dark-mode .result-card h3{
+
+    color:#C4B5FD;
+
+}
+
+body.dark-mode .result-card p{
+
+    color:#D1D5DB;
+
+}
