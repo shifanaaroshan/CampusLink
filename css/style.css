@@ -3434,3 +3434,100 @@ color:#A78BFA;
     display:block;
     margin:20px auto;
 }
+/* ==========================================
+   PRIVACY PAGE
+========================================== */
+
+.privacy-page{
+
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#5B21B6,#7C3AED);
+
+    padding:40px;
+
+    padding-bottom:120px;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.privacy-header{
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:30px;
+
+}
+
+.privacy-header h1{
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.privacy-header p{
+
+    color:#E9D5FF;
+
+}
+
+.privacy-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    margin-bottom:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.privacy-card h3{
+
+    color:#5B21B6;
+
+    margin-bottom:10px;
+
+}
+
+.privacy-card p{
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+.privacy-btn{
+
+    margin-top:15px;
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#6C63FF;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.privacy-btn:hover{
+
+    background:#5B21B6;
+
+}
