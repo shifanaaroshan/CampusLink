@@ -3641,3 +3641,143 @@ body.dark-mode .result-card p{
     color:#D1D5DB;
 
 }
+/* ==========================================
+   RESOURCE PAGE
+========================================== */
+
+.resource-page{
+
+    width:90%;
+    max-width:900px;
+
+    margin:auto;
+
+    padding:30px;
+
+    padding-bottom:120px;
+
+}
+
+.resource-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.resource-header h1{
+
+    color:#5B21B6;
+
+}
+
+.resource-info{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.resource-info p{
+
+    margin-bottom:15px;
+
+}
+
+.resource-actions{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:30px;
+
+}
+
+.resource-actions button{
+
+    flex:1;
+
+    min-width:120px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#7C3AED;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.comments-section{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.comments-section textarea{
+
+    width:100%;
+
+    height:100px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin:20px 0;
+
+    resize:none;
+
+}
+
+.comments-section button{
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#7C3AED;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.comment-card{
+
+    background:#F3F4F6;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-top:15px;
+
+}
