@@ -8,40 +8,57 @@ document.querySelectorAll(
 ".search-resource"
 );
 
-buttons.forEach(button=>{
+buttons.forEach(button => {
 
-button.addEventListener(
-"click",
-function(){
+    button.addEventListener(
+        "click",
+        function () {
 
-buttons.forEach(btn=>{
-btn.classList.remove("active");
-});
+            buttons.forEach(btn => {
+                btn.classList.remove(
+                    "active-category"
+                );
+            });
 
-this.classList.add("active");
+            this.classList.add(
+                "active-category"
+            );
 
-const category =
-this.textContent
-.toLowerCase();
+            let category =
+                this.textContent
+                    .toLowerCase();
 
-resources.forEach(resource=>{
+            if (
+                category ===
+                "question papers"
+            ) {
+                category =
+                    "question-paper";
+            }
 
-if(
-category==="all" ||
-resource.dataset.category===category
-){
+            resources.forEach(
+                resource => {
 
-resource.style.display="flex";
+                    if (
+                        category === "all" ||
+                        resource.dataset
+                            .category === category
+                    ) {
 
-}
-else{
+                        resource.style.display =
+                            "flex";
 
-resource.style.display="none";
+                    } else {
 
-}
+                        resource.style.display =
+                            "none";
 
-});
+                    }
 
-});
+                }
+            );
+
+        }
+    );
 
 });
