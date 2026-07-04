@@ -22,65 +22,58 @@ const designation = document.getElementById("designation");
 // ==========================
 // SIGNUP
 // ==========================
-
 if (signupForm) {
 
-    signupForm.addEventListener("submit", function (event) {
+    signupForm.addEventListener("submit", async function (event) {
 
         event.preventDefault();
 
-        const fullName = document.getElementById("fullName").value.trim();
-
-        const registerNumber = document.getElementById("registerNumber").value.trim();
-
-        const email = document.getElementById("email").value.trim();
-
-        const password = document.getElementById("password").value;
-
-        const confirmPassword = document.getElementById("confirmPassword").value;
-
-        if (password !== confirmPassword) {
-
-            alert("Passwords do not match!");
-
-            return;
-
-        }
-
         const user = {
 
-            fullName,
+            full_name: document.getElementById("fullName").value.trim(),
 
-            registerNumber,
+            register_number: document.getElementById("registerNumber").value.trim(),
 
-            email,
+            email: document.getElementById("email").value.trim(),
+
+            password: document.getElementById("password").value,
 
             role: role.value,
 
-            programmeLevel: programmeLevel ? programmeLevel.value : "",
+            programme_level: programmeLevel ? programmeLevel.value : "",
 
             programme: programme ? programme.value : "",
 
             year: year ? year.value : "",
 
-            facultyDepartment: facultyDepartment ? facultyDepartment.value : "",
+            faculty_department: facultyDepartment ? facultyDepartment.value : "",
 
             designation: designation ? designation.value : "",
 
-            password
+            profile_image: "",
+
+            bio: ""
 
         };
 
-        localStorage.setItem("campusLinkUser", JSON.stringify(user));
+        const { error } = await supabase
+            .from("users")
+            .insert([user]);
 
-        alert("Account created successfully!");
+        if (error) {
+
+            alert(error.message);
+            return;
+
+        }
+
+        alert("Account Created Successfully!");
 
         window.location.href = "login.html";
 
     });
 
 }
-
 // ==========================
 // LOGIN
 // ==========================
