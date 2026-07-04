@@ -1,3 +1,4 @@
+import supabase from "./supabase.js";
 // =====================================
 // CAMPUS LINK AUTH.JS
 // Version 2
